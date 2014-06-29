@@ -46,5 +46,6 @@ p {
 @media screen and (max-width:650px){
 	div {
 		width: 32%;
+		text-size: 30px;
 	}
 }
