@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+div {
+	width: 33%;
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: left;
+	text-align: center;
+	background-color: #33CCFF;
+}
+
+a {
+	color: black;
+}
+
+a[href^='proj'] {
+	background: url('world_link.png') no-repeat left center;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+a[href^='mail'] {
+	background: url('email.png') no-repeat left center;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+h1 {
+	background: url('background.jpg');
+	background-size: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+
+body {
+	background-color: #CCFFFF;
+}
+
+p {
+	text-align: center;
+}
+
+@media screen and (max-width:650px){
+	div {
+		width: 32%;
+	}
+}
