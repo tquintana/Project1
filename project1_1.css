@@ -1,29 +1,44 @@
 @charset "utf-8";
 
-div {
-	width: 33%;
-	border: 1px solid black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	float: left;
-	text-align: center;
-	background-color: #33CCFF;
+@font-face {
+	font-family: bev;
+	src: url('Bevan.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: quick-r;
+	src: url('Quicksand-Regular.otf') format('opentype');	
+}
+
+@font-face {
+	font-family: quick-i;
+	src: url('Quicksand-Italic.otf') format('opentype');	
 }
 
 a {
 	color: black;
+	font-size: 16px;
+	font-family: bev, sans-serif;
 }
 
-a[href^='proj'] {
-	background: url('world_link.png') no-repeat left center;
-	display: inline-block;
-	padding-left: 20px;
+div {
+	width: 33%;
+	float: left;
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	background-color: #33CCFF;
 }
 
-a[href^='mail'] {
-	background: url('email.png') no-repeat left center;
-	display: inline-block;
-	padding-left: 20px;
+p {
+	text-indent: 20px;
+	font-size: 20px;
+	font-family: quick-r, sans-serif;
+}
+
+p:first-of-type ~ p {
+	font-family: quick-i, sans-serif;
 }
 
 h1 {
@@ -33,19 +48,36 @@ h1 {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;	
+	font-family: bev, sans-serif;
 }
 
 body {
 	background-color: #CCFFFF;
 }
 
-p {
-	text-align: center;
-}
-
-@media screen and (max-width:500px){
+@media screen and (max-width:630px){ 
 	div {
 		width: 32%;
-		font-size: 25px;
+	}
+}
+
+@media screen and (max-width:350px){
+	a {
+		font-size: 15px;
+	}
+	
+	p {
+		font-size: 15px;
+	}
+	
+	div {
+		height: 40px;
+		width: 32%;
+	}
+}
+
+@media screen and (max-width:250px){ 
+	div {
+		height: 60px;
 	}
 }
